@@ -2,26 +2,67 @@
 :root {
 	--global-color-1: #800000;
 }
+/* another thing im adding for the reset selector*/
+*{
+	margin: 0;
+	padding: 0;
 
+}
+/*I'm gonna add my own thing for the html*/
+html {
+	background-color:rgb(250, 250, 250) ;
+}
 /* the styles for the elements */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    margin-left: 10px;
+    margin-left: auto;
+	margin-right: auto;
+	margin-bottom:0 ; 
+	margin-top:0;
+	width: 600px;
+	border: 3px solid #931420;
+	background-color: #fffded;
+
+}
+body blockquote{
+	font-style: italic;
+}
+body main{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+body h1{
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
+}
+section{
+	border-radius:  1px 1px 1px 1px;
+	box-shadow: 2px 2px 2px 2px black;
 }
 a:focus, a:hover {
 	font-style: italic;
 }
-/* the styles for the header */
+/* the styles for the header, I couldn't get the linear gradient to work i'm not sure why */
+
+	
+header{
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background: linear-gradient (30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+
 header h2 {
 	font-size: 175%;
 	color: var(--global-color-1);
-	text-indent: 30px;
+	
 }
-header h3 {
+header h3 { 
 	font-size: 130%;
 	font-style: italic;
-	text-indent: 30px;
+	
 }
 header img {
 	float: left;
@@ -67,4 +108,9 @@ main li {
 footer p {
 	text-align: center;
 	padding: 1em 0;
+	color:rgb(250, 250, 250)
+}
+footer {
+	border: 3px solid #931420;
+	background-color: #931420;
 }
